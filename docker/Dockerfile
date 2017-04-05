@@ -14,7 +14,7 @@ RUN apt-get update && apt-get install -y --no-install-recommends \
 		libnewlib-arm-none-eabi \
 		python3 \
 	&& rm -rf /var/lib/apt/lists/* \
-	&& git clone https://github.com/kiibohd/controller.git \
+	&& git clone https://github.com/Torreip/ergodox_controller.git \
 	&& mkdir /kiibohd \
 	&& cd controller \
 	&& mkdir first_compile \

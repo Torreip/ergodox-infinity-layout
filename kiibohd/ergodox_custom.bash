@@ -1,7 +1,9 @@
 #!/bin/bash
-# This is a build script template
+#
+# Keyboard: Ergodox
+#
 # These build scripts are just a convenience for configuring your keyboard (less daunting than CMake)
-# Jacob Alexander 2015
+# Jacob Alexander 2015-2016
 
 
 
@@ -18,12 +20,12 @@ BuildPath="ICED-L"
 ## KLL Configuration ##
 
 # Generally shouldn't be changed, this will affect every layer
-BaseMap="defaultMap leftHand slave1 rightHand"
+BaseMap="scancode_map leftHand slave1 rightHand"
 
 # This is the default layer of the keyboard
 # NOTE: To combine kll files into a single layout, separate them by spaces
 # e.g.  DefaultMap="mylayout mylayoutmod"
-DefaultMap="fred-0 lcdFuncMap"
+DefaultMap="MDErgo1-Default-0 lcdFuncMap remote_reload"
 
 # This is where you set the additional layers
 # NOTE: Indexing starts at 1
@@ -31,9 +33,8 @@ DefaultMap="fred-0 lcdFuncMap"
 # e.g.  PartialMaps[1]="layer1 layer1mod"
 #       PartialMaps[2]="layer2"
 #       PartialMaps[3]="layer3"
-PartialMaps[1]="fred-1"
-PartialMaps[2]="fred-2"
-
+PartialMaps[1]="MDErgo1-Default-1 lcdFuncMap remote_reload"
+PartialMaps[2]="MDErgo1-Default-2 lcdFuncMap remote_reload"
 
 
 ##########################
@@ -45,7 +46,7 @@ PartialMaps[2]="fred-2"
 # NOTE: Changing any of these variables will require a force build to compile correctly
 
 # Keyboard Module Configuration
-ScanModule="MDErgo1"
+ScanModule="Infinity_Ergodox"
 MacroModule="PartialMap"
 OutputModule="pjrcUSB"
 DebugModule="full"

@@ -1,13 +1,20 @@
-Author = "Frederic Merizen 2015";
-Base = "Blank";
-Date = "2015-10-23";
-Generator = "KIICONF 0.2";
-KLL = "0.3c";
+Name = "MDErgo1";
 Layout = "Default";
-Name = "Fred";
+Base = "Blank";
 Version = "0.1";
+Author = "HaaTa (Jacob Alexander) 2015";
+KLL = "0.3c";
+Date = "2015-09-12";
+Generator = "KIICONF 0.2";
 
+U"ESC" : U"LCK6";
+U"5" : U"LCK5";
+U"4" : U"LCK4";
+U"3" : U"LCK3";
+U"2" : U"LCK2";
+U"1" : U"LCK1";
 U"EQUALS" : flashMode();
+U"FUNCTION1" : U"LCK7";
 U"7" : U"NUMLOCK";
 U"8" : U"P/";
 U"9" : U"P*";
