@@ -13,14 +13,12 @@ RUN apt-get update && apt-get install -y --no-install-recommends \
 		libusb-1.0-0-dev \
 		libnewlib-arm-none-eabi \
 		python3 \
-	&& rm -rf /var/lib/apt/lists/* \
-	&& git clone https://github.com/Torreip/ergodox_controller.git \
+	&& rm -rf /var/lib/apt/lists/*
+RUN git clone https://github.com/Torreip/ergodox_controller.git controller \
 	&& mkdir /kiibohd \
 	&& cd controller \
-	&& mkdir first_compile \
-	&& cd first_compile \
-	&& cmake .. \
-	&& make
+    && cd Keyboards \
+    && ./ergodox.bash
 
 VOLUME /kiibohd
 

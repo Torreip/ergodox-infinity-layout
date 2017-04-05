@@ -15,7 +15,7 @@ case $1 in
 		cp /kiibohd/*.kll kll/layouts
 		cd Keyboards
 		./$1
-		cp ICED-L/kiibohd.dfu.bin /kiibohd/left_kiibohd.dfu.bin
-		cp ICED-R/kiibohd.dfu.bin /kiibohd/right_kiibohd.dfu.bin
+		cp ICED-L.gcc/kiibohd.dfu.bin /kiibohd/left_kiibohd.dfu.bin
+		cp ICED-R.gcc/kiibohd.dfu.bin /kiibohd/right_kiibohd.dfu.bin
 		;;
 esac
